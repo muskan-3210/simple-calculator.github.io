@@ -1,0 +1,118 @@
+   
+*{
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+  }
+.container{
+    display: block;
+    background-color:rgba(0, 0, 0, 0.541);
+    width: 300px;
+    height: 420pt;
+    position: relative;
+    border-radius: 30px;
+    margin-top: 5.5vh;
+    margin-left: 80vh;
+}
+#display{
+    margin: 0 10px;
+    height:150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    font-size: 30px;
+    overflow-x:scroll;
+}
+#display::before-webkit-scrollbar{
+    display: block;
+    height: 3px;
+}
+button:hover{
+    transform:scale(1.1);
+}
+button{
+    height: 60px;
+    width: 60px;
+    border:0;
+    font-size: 20px;
+    cursor:pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5vh;
+    border-radius: 50%;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6a6a6;
+    color:black;
+    width: 65px;
+    height: 65px;
+    margin-top: 3vh;
+    margin-left: 0.5vh;
+}
+button#equal{
+    height: 70px;
+    width: 70px;
+    border-radius: 40%;
+
+}
+button#backspace{
+    width:75px;
+    border-radius: 20%;
+
+}
+button#clear{
+    width:65px;
+    border-radius: 20%;
+}
+.calculator #display{
+    color:white;
+}
+.calculator button#clear{
+    background-color:#0066ff;
+    color:#ffdbda;
+}
+.calculator button.btn-number{
+    background-color:black;
+    color:white;
+}
+.calculator button.btn-operator{
+    background-color: black;
+    color: #0066ff;
+}
+.calculator button.btn-equal{
+    background-color: #ffaa1d;
+    color: #eee5e5;
+}
+@media only screen and (max-width:900px){
+    .container {
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+        margin-right: 0%;
+        text-align: center;
+        position: relative;
+    }
+}
